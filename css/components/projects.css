@@ -1,0 +1,218 @@
+.projects {
+  margin-bottom: 16rem;
+  scroll-margin-top: 15rem;
+}
+
+.projects .projects__content {
+  max-width: 56rem;
+  text-align: center;
+  margin: 0 auto 6rem;
+}
+
+.projects ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.projects ul li.projects__reversed-list {
+  flex-direction: row-reverse;
+}
+
+.projects ul li:not(:last-of-type) {
+  margin-bottom: 12rem;
+}
+
+.projects ul li .image img {
+  width: 100%;
+  min-width: 40rem;
+  max-width: 47rem;
+  height: auto;
+}
+
+.projects ul li .projects__info {
+  max-width: 47rem;
+}
+
+.projects ul li .projects__info p {
+  margin: 1rem 0 4rem;
+  text-align: justify;
+}
+
+.projects ul li .projects__info a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.projects .texto{
+  /* align-items: center;
+  justify-content: center; */
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 600;
+  color:var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .projects ul li,
+  .projects ul li.projects__reversed-list {
+    flex-direction: column;
+  }
+
+  .projects ul li .projects__info {
+    max-width: 66rem;
+  }
+  
+
+  .projects ul li .image img {
+    min-width: auto;
+  }
+}
+
+
+/* TRABALHOS ============= */
+.trabalhos {
+  /* background: linear-gradient(to bottom, #000031, #00002c); */
+  width: 100%;
+  min-width: 40rem;
+  max-width: 47rem;
+  height: auto;
+}
+
+.trabalhos h2 {
+  color: #fff;
+  padding: 1rem;
+}
+
+/* .trabalhos .cabecalho span {
+  color: rgb(255, 230, 0);
+} */
+
+.trabalhos .caixa-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+.trabalhos .caixa-conteudo .caixa {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+}
+
+.trabalhos .caixa-conteudo .caixa img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trabalhos .caixa-conteudo .caixa .conteudo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+
+.trabalhos .caixa-conteudo .caixa .conteudo .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: var(--gray);
+}
+
+.trabalhos .caixa-conteudo .caixa .conteudo .tag h3 {
+  font-size: 2rem;
+}
+
+.trabalhos .caixa-conteudo .caixa:hover .conteudo {
+  top: 25%;
+  transition: 0.5s;
+}
+
+.trabalhos .desc {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trabalhos .desc p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.trabalhos .desc .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.trabalhos .desc .btns .btn {
+  line-height: 0;
+  display: inline;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgb(12, 12, 12);
+  margin-right: 2rem;
+}
+
+.trabalhos .desc .btns .btn:hover {
+  background: var(--primary-color);
+}
+
+.trabalhos .vertudo {
+  display: flex;
+  justify-content: center;
+}
+
+.trabalhos .vertudo .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+
+.trabalhos .vertudo .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.trabalhos .vertudo .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.trabalhos .vertudo .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.trabalhos .vertudo .btn:hover i {
+  transform: translateX(5px);
+}

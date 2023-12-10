@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+header .header__left {
+  max-width: 62rem;
+  flex: 1;
+}
+
+header .header__left p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 50rem;
+  text-align: justify;
+}
+
+/* Escrita em JS - Hoje... */
+header .header__left .texto {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.1rem;
+}
+
+header .header__left .btn i {
+  /* margin-right: 0.1rem; */
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  /* color: red; */
+}
+
+header .header__left .btn:hover i {
+  transform: translateX(10px);
+}
+
+
+header .header__right .header__image {
+  position: relative;
+  line-height: 0;
+}
+
+header .header__right .header__image::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--tertiary-color);
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+header .header__right .header__image .lucas {
+  border-radius: 0.5rem;
+  min-width: 25rem;
+  max-width: 100%;
+}
+
+header .header__right .header__image .background {
+  position: absolute;
+  top: -4rem;
+  right: -2.5rem;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .header__left p {
+    margin: 2rem auto 4rem;
+  }
+}
+
+/*Estilizando a parte frontal*/
+/* .home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+} */
+
+/* .home .imagem img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+} */
+
+/* .home .imagem img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+} */
+
+/* .home .imagem img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+} */
+
+/* .home .imagem {
+  flex: 1 1 40rem;
+  z-index: 1;
+} */
+
+/* .home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+/* .header__left p { */
+  /*A propriedade flex do CSS, define como um ítem será posicionado para no 
+  espaço disponível dentro de seu container.*/
+  /* flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+} */
+
+/* .header__left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+.header__left .conteudo h2 {
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #002057;
+}
+
+.home .conteudo h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ff7b00;
+}
+
+.header__left .eu {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home .conteudo p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+  padding: 1rem 0;
+}

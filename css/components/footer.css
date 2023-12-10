@@ -1,0 +1,230 @@
+footer {
+  background-color: var(--dark-secondary-color);
+}
+/* 
+footer .footer__content {
+  text-align: center;
+  padding: 6rem 2rem 1rem;
+  max-width: 87rem;
+}
+
+footer .footer__content .footer__contact span {
+  display: block;
+  font-weight: 500;
+}
+
+footer .footer__content ul li {
+  display: inline-block;
+}
+
+footer .footer__content ul a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+footer .footer__content .footer__copyright {
+  font-size: 1.4rem;
+} */
+
+/* Vamos conversar? */
+footer .footer__content .tertiary-title {
+  text-align: center;
+  justify-content: center; 
+  color: var(--white);
+}
+
+footer .footer__content p {
+  color: var(--white);
+}
+
+/* Frase do Rodapé: Ficarei feliz.. */
+footer .footer__content .conversar {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Inicio da Caixa geral do Rodapé */
+.rodape {
+  min-height: auto;
+  padding-top: 0;
+  background:  var(--dark-secondary-color);
+}
+
+.rodape .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Caixa dos Links Rápidos */
+.rodape .box-container .caixa {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+  
+}
+/* Links Rápidos */
+.rodape .box-container .caixa h3 {
+  font-size: 2.5rem;
+  color: var(--white);
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.rodape .box-container .caixa p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--white);
+  padding: 0.7rem 0px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.rodape .box-container .caixa p i {
+  line-height: 0.5rem;
+  padding-right: 1rem;
+  color: var(--white);
+}
+
+/* Lista dos Links - home, sobre... */
+.rodape .box-container .caixa a {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 0.3rem 0;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.rodape .box-container .caixa a:hover {
+  color: #0c1bbdc1;
+}
+
+.rodape .box-container .caixa .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+/* Parte interna dos icones de rede social */
+.rodape .box-container .caixa .share a {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background: rgb(230, 230, 230);
+  color: var(--primary-color);
+  border: none;
+}
+
+/* Ao passar do mouse nas redes sociais */
+.rodape .box-container .caixa .share a:hover {
+  background: transparent;
+  transform: scale(0.98);
+  border: 0.1rem solid rgb(180, 178, 178);
+  color: var(--white);
+}
+
+.rodape .credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+}
+
+/* Direitos Reservados */
+footer .footer__content .footer__copyright {
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.rodape .credit a {
+  color: #ffae00;
+}
+
+.rodape .fa {
+  color: #e90606;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+  animation: animacao 0.35s infinite alternate;
+}
+
+@-webkit-keyframes animacao {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes animacao {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .footer__content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .rodape .box-container .caixa {
+    margin: 1.5rem;
+  }
+
+  .rodape .box-container .caixa p {
+    padding: 0.7rem;
+  }
+
+  .rodape .box-container .caixa .share a {
+    padding: 1.2rem;
+  }
+}
+
+/*responsividade da página total*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding-right: 0;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+/* common media queries ends*/
+
+/* scroll top starts */
+#scroll-top {
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #ff0000;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+/*Quando o botão está ativo, ele desce */
+#scroll-top.active {
+  top: calc(100% - 12rem);
+}

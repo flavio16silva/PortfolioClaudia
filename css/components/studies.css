@@ -1,0 +1,302 @@
+/* Linguagens - Quadro Geral */
+.studies .studies__box .box-title {
+  width: 50rem;     /* 420px */
+  height: 38vh;
+  margin: 1rem 0 1rem 5rem; /* 20px */
+  padding: 0 1rem;  /* 10px */
+  box-shadow: 0 0 25px 0 var(--gray);
+  border-radius: 0.8rem;
+  background: #e7e4e4;
+}
+/* Porcentagem das Linguagens */
+.studies .studies__box .box-title p {
+  margin-bottom: -7px;
+  margin-left: 0.3em;
+  font-weight: 800;
+}
+
+/* Linguagens - Nome das linguagens */
+.studies .studies__box .box-title span {
+  color: var(--primary-color);
+  font-weight: 800; 
+  padding-bottom: 25px;   
+}
+/* Prenchimento da Porcentagem - Primeira cor */
+.studies .studies__box .box-title .b1 {
+  width: 470px;
+  height: 8px;
+  background: var(--primary-color);
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+/* Prenchimento da Porcentagem - Segunda cor */
+.studies .studies__box .box-title .b2 {
+  width: 295px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.studies .studies__box .box-title .b3 {
+  width: 240px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.studies .studies__box .box-title .b4 {
+  width: 150px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.about .about__right .box-title .b5 {
+  width: 100px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.about .about__right .box-title .b6 {
+  width: 50px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width:1024px) {
+  .about .about__right .box-title{
+    width: 90%;
+    height: 40%;
+    margin: 1rem 5rem 1rem 0rem; 
+          
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;  
+    /* justify-content: center;
+    margin: 2rem 4rem; */
+  }
+
+  .about .about__left {
+    max-width: 66rem;
+    text-align: center;
+  }
+
+  /* .secondary-title {
+    font-size: 2rem;
+  } */
+
+  /* .about .about__left p{
+    font-size: 2rem;
+    text-align: center;
+  } */
+
+  .about .about__right {
+    text-align: center;
+    /* align-items: center; */
+  }
+
+  .about .about__right .box-title{
+    width: 70%;
+    height: 33vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem 3rem 10rem;
+    padding: 0 1rem; 
+  }
+
+  .about .about__right .box-title p{
+    margin: 0rem 58rem -1rem 0rem;
+  }
+
+  .about .about__right .box-title span {
+    margin: 0rem 58rem 0rem 0rem;
+  }
+  .about .about__right .box-title .b1{
+    width: 100%;
+  }
+  .about .about__right .box-title .b2{
+    width: 70%;
+  }
+  .about .about__right .box-title .b3{
+    width: 60%;
+  }
+  .about .about__right .box-title .b4{
+    width: 25%;
+  }
+  .about .about__right .box-title .b5{
+    width: 20%;
+  }
+  .about .about__right .box-title .b6{
+    width: 10%;
+  }
+
+}
+
+ /* Slider: Corpo dos Cards*/
+ #port .container {
+  width: 100%;
+  height: 100vh;
+  /* background: url(assets/img1); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: none; 
+ }
+ 
+/* Criação dos Inputs - Cards */
+#port .container input[type=radio]{
+  display: none; 
+}
+
+/* Container dos Cards */
+#port .container .card{  
+  position: absolute;
+  width: 40%;
+  height: 95%;
+  left: 0;
+  right: 0;
+  margin: 150px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(73, 76, 78, 0.5);
+  transition: 0.4s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#port .container h2{ 
+  margin-top: 100px;
+}
+
+#port .container p{
+  margin-bottom: -50px;
+}
+
+/* Imagem dos Cards */
+#port .container .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Titulo dos Cards */
+#port .container .card h1{
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 9;
+  color: var(--black); 
+  font-size: 6rem;
+  margin-top: 60px;
+}
+
+/* Paragrafo dos Cards */
+#port .container .card p{
+  position: absolute;
+  z-index: 9;
+  width: 400px;
+  color: var(--black); 
+  margin-top: 200px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+/* Botão do Card: Hire me */
+#port .container .card button{
+  position: absolute;
+  z-index: 9;
+  margin-top: 400px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+  background: #333131;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Dimensão dos Cards: Altura e Largura */
+#port .container .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -50px;
+}
+/* Transição entre os cards - 1 */
+#item-1:checked ~ .cards #panf-3,
+#item-2:checked ~ .cards #panf-1,
+#item-3:checked ~ .cards #panf-2{
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+/* Transição entre os cards - 2*/
+#item-1:checked ~ .cards #panf-2,
+#item-2:checked ~ .cards #panf-3,
+#item-3:checked ~ .cards #panf-1{
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+/* Transição entre os cards - 3*/
+#item-1:checked ~ .cards #panf-1,
+#item-2:checked ~ .cards #panf-2,
+#item-3:checked ~ .cards #panf-3{
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1280px) {
+  #port .container .card h1{
+    font-size: 5rem;
+  }
+  #port .container .card p{
+    width: 70%;
+    height: 70%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px){
+  #port .container .card{
+    width: 60%;
+    height:50%; 
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  #port .container .card{
+    width: 50%;
+    height: 50%; 
+    text-align: center;
+  }
+  #port .container .card h1{
+    font-size: 3rem;
+  }
+
+  #port .container .card p{
+    width: 280px;
+    font-size: 1.5rem;
+  }
+
+
+
+
+}
