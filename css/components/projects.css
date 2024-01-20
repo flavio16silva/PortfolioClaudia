@@ -26,7 +26,7 @@
 }
 
 .projects ul li:not(:last-of-type) {
-  margin-bottom: 12rem;
+  margin-bottom: 0.1px;
 }
 
 /* Imagens dos Serviços Empresariais */
@@ -123,11 +123,12 @@
   /* object-position: center center; */
 }
 
+/* Caixa que sobre ao passar o mouse */
 .trabalhos .caixa-conteudo .caixa .conteudo {
-  height: 50%;
+  height: 60%;
   width: 100%;
   position: absolute;
-  top: 85%;
+  top: 93%;
   left: 0;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
@@ -137,7 +138,7 @@
 .trabalhos .caixa-conteudo .caixa .conteudo .tag {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 4.5rem;
   width: 100%;
@@ -146,7 +147,7 @@
 }
 
 .trabalhos .caixa-conteudo .caixa .conteudo .tag h3 {
-  font-size: 2rem;
+  font-size: 2rem;  
 }
 
 /* Ao passar do mouse na imagem - subir o texto */
@@ -163,8 +164,20 @@
 }
 
 .trabalhos .desc p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
   text-align: center;
+  /* color: blue; */
+}
+
+.trabalhos .caixa-conteudo .caixa .conteudo .desc .melhorias li {
+  /* color: red; */
+  line-height: 0.9em;  
+}
+
+.trabalhos .caixa-conteudo .caixa .conteudo .desc p{
+  line-height: 1em;  
 }
 
 .trabalhos .desc .btns {
