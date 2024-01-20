@@ -17,7 +17,7 @@
   /* grid-column-gap: 16px; */
   grid-template-rows: auto auto;
   /* justify-content: space-between; */
-  align-items: stretch;
+  align-items:center;
   gap: 2rem;
 }
 
@@ -29,13 +29,13 @@
   margin-bottom: 12rem;
 }
 
-/* Imagens */
+/* Imagens dos Serviços Empresariais */
 .projects ul li img {
   width: 80%;
   min-width: 30rem;
   max-width: 30rem;
   height: 100%;
-  border-style: double;
+  /* border-style: double; */
   /* border-radius:50%; */
 }
 
@@ -105,20 +105,22 @@
   margin: 2rem;
 }
 
-/* Area de Imagem */
+/* Area de Imagem - Fundo branco */
 .trabalhos .caixa-conteudo .caixa {
-  flex: 1 1 20rem;
-  border-radius: 0.5rem;
+  /* flex: 1 1 20rem; */
+  border-radius: 0.7rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   height: 50rem;
 }
 
+/* Imagem antes do Fundo branco */
 .trabalhos .caixa-conteudo .caixa img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit:cover;
+  /* object-position: center center; */
 }
 
 .trabalhos .caixa-conteudo .caixa .conteudo {
