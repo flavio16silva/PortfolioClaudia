@@ -4,11 +4,17 @@ header {
   align-items: center;
   gap: 0.3rem; /*Espaçamento entre texto e circulo*/
   scroll-margin-top: 20rem;
+  
 }
 
 header .header__left {
   max-width: 62rem;
   flex: 1;
+}
+
+header .header__left h1{
+  font-size: 4rem;
+  margin-top: 50px;
 }
 
 header .header__left p {
