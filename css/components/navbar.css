@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,30 +8,52 @@
 }
 
 .navbar .navbar__content {
-  padding: 3rem 4rem 1rem;
+  padding: 1rem 4rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; 
+  align-items: center;
+  
 }
 
+/* ul  - Navbar */
+.navbar .navbar__content .navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* lista de links  - Navbar */
 .navbar .navbar__content .navbar__links li {
+  text-transform: uppercase;
+  font-weight: 500;
   display: inline-block;
 }
 
+/* Espaçamento entre os li */
 .navbar .navbar__content .navbar__links li:not(:last-of-type) {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .navbar .navbar__content .navbar__links a {
   padding: 1rem;
-  display: inline-block;
+  /* display: inline-block; */
+  /* transition: all .5s;
+  border: 2px solid transparent; */
+  /* align-items: center; */
+
 }
 
-.navbar .navbar__content .navbar__links a:hover {
+/*Ao passar do mouse nos links navbar  */
+.navbar .navbar__content .navbar__links li:hover {
   color: var(--tertiary-color);
+  transition: 0.3s ease;
+  transform: scale(1.2); 
 }
 
+/* Sobreamento da Navbar ao subir pagina */
 .navbar.active {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 10px 50px -2px rgba(0,0,0,.14);
 }
 
 .navbar .navbar__content .navbar__mobile,
@@ -52,8 +74,7 @@
   .navbar .navbar__content .navbar__mobile img {
     width: 3.6rem;
     height: 3.6rem;
-    cursor: pointer;
-    
+    cursor: pointer;    
   }
 
   .navbar .navbar__content .navbar__mobile.active .mobile__links {
