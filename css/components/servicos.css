@@ -1,5 +1,6 @@
+/* Serviços Oferecidos */
 .skills {
-  background-color: var(--light-tertiary-color);
+  background-color: var(--clau-color);
   scroll-margin-top: 15rem;
   margin-bottom: 15rem;
 }
