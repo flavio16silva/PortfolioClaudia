@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--dark-secondary-color);
+  background-color: var(--clau-color);
 }
 /* 
 footer .footer__content {
@@ -48,7 +48,7 @@ footer .footer__content .conversar {
 .rodape {
   min-height: auto;
   padding-top: 0;
-  background:  var(--dark-secondary-color);
+  background:  var(--clau-color);
 }
 
 .rodape .box-container {
