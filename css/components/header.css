@@ -4,12 +4,14 @@ header {
   align-items: center;
   gap: 0.3rem; /*Espaçamento entre texto e circulo*/
   scroll-margin-top: 20rem;
+  background-color: var(--clau-color);
   
 }
 
 header .header__left {
   max-width: 62rem;
   flex: 1;
+  
 }
 
 header .header__left h1{
@@ -75,6 +77,7 @@ header .header__right .header__image .background {
   top: -4rem;
   right: -4.5rem;
   z-index: -1;
+  
 }
 
 @media only screen and (max-width: 768px) {
