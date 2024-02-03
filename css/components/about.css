@@ -3,11 +3,14 @@
   justify-content: space-between;
   gap: 4rem;
   scroll-margin-top: 20rem;
+  background-color: var(--clau-color);
+
 }
 
 .about .about__left {
   max-width: 40rem;
   flex: 1;
+  
 }
 
 .about .about__left p {
@@ -30,6 +33,7 @@
 .about .about__right {
   flex: 1;
   max-width: 66rem;
+  
 }
 
 .about .about__right p {
