@@ -48,7 +48,7 @@ footer .footer__content .conversar {
 .rodape {
   min-height: auto;
   padding-top: 0;
-  background:  var(--clau-color);
+  background:var(--clau-color);
 }
 
 .rodape .box-container {
