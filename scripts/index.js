@@ -71,7 +71,7 @@ var typed = new Typed(".escrever-texto", {
 
 //Frase do Steve:
 var typed = new Typed(".citacao", {
-  strings: ["As pessoas que são loucas o suficiente para pensar que podem mudar o mundo são as que o fazem. - Steve Jobs " ],
+  strings: ["Quem olha para fora sonha, quem olha para dentro desperta - Carl Jung " ],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
