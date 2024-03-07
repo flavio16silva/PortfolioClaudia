@@ -124,10 +124,11 @@ footer .footer__content .conversar {
 .rodape .box-container .caixa .share a:hover {
   background: transparent;
   transform: scale(0.98);
-  border: 0.1rem solid rgb(180, 178, 178);
+  border: 0.1rem solid rgb(242, 239, 239);
   color: var(--white);
 }
 
+/* Nome do Rodapé */
 .rodape .credit {
   padding: 1rem 0 0 0;
   text-align: center;
