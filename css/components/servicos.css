@@ -1,5 +1,6 @@
 /* Serviços Oferecidos */
 .skills {
+  min-height: 90vh;
   background-color: var(--clau-color);
   scroll-margin-top: 15rem;
   margin-bottom: 15rem;
@@ -20,20 +21,33 @@
 .skills .skills__content ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
-.skills .skills__content ul li .image-container {
+/* Imagens dos Serviços Oferecidos */
+.skills .skills__content ul li .image-container img {
   background-color: var(--white);
-  padding: 2rem;
-  border-radius: 50%;
-  width: 7rem;
-  height: 7rem;
+  padding: 1rem;
+  border-radius: 30%;
+  width: 25rem;
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+  transition: 0.2s;  
+  overflow: hidden;  
+}
+/* Imagens dos Serviços Oferecidos - Ao passar do mouse */
+.skills .skills__content ul li .image-container img:hover {
+  box-shadow: 0 8px 10px rgba(93, 93, 94, 0.811) !important;
+  background-color:var(--clau-color) !important;
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  max-height: 250px;  
 }
 
 .skills .skills__content ul li .image-container i {
@@ -48,29 +62,38 @@
   margin: 2rem 0 1rem;
 }
 
-
-.skills {
-  min-height: 90vh;
-  /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
-}
-
+/* Titulo - Serviços Oferecidos */
 .skills h2 {
-  color: #111111;
+  color: var(--white);
+}
+/* Descrição geral*/
+.skills .skills__content p{
+  color: var(--white);
 }
 
+/* Nome dos Serviços Oferecidos - Empresas, Recrutamento... */
 .skills .skills__content .skills__item h3 {
-  font-weight: 600;
+  font-size:18px;
+  font-weight: 700;
+  color: var(--white)
 }
 
-.skills .skills__content .linguagens{
-  font-weight: 700;
+/* Paragrafo descritivo dos serviços oferecidos */
+.skills .skills__content .skills__item p {
+  margin-top:25px;
+  color: var(--white)
+
 }
+
+/* .skills .skills__content .linguagens{
+  font-weight: 700;
+} */
 
 /* .skills .cabecalho span {
   color: rgb(255, 230, 0);
 } */
 
-.skills .conteudo {
+/* .skills .conteudo {
   background: rgba(0, 0, 22, 0.4);
   color: #fff;
   border-radius: 1rem;
@@ -79,17 +102,17 @@
   margin: auto;
   margin-top: 2rem;
   flex-wrap: wrap;    
-}
+} */
 
-.skills .conteudo .bar img {
+/* .skills .conteudo .bar img {
   width: 70px;
   height: 77px;
   border-radius: 7px;
   padding-bottom: 7px;
-}
+} */
 
 /* Quadro das imagens de linguagem na horizontal */
-.skills .conteudo .linha {
+/* .skills .conteudo .linha {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -97,9 +120,9 @@
   align-items: center;
   gap: 1.2rem;
   
-}
+} */
 
-.skills .conteudo .bar {
+/* .skills .conteudo .bar {
   margin-bottom: 10px;
   padding: 10px 10px 0.3px;
   border-radius: 1rem;
@@ -108,18 +131,9 @@
   transition: 0.2s;  
   max-height: 110px;
   overflow: hidden;
-}
+} */
 
-.skills .conteudo .bar:hover {
-  box-shadow: 0 8px 10px rgba(34, 34, 36, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  max-height: 200px;
-  
-}
+
 
 .skills .conteudo .bar .info {
   display: flex;
