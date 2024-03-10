@@ -147,12 +147,8 @@ footer .footer__content .footer__copyright {
   justify-content: center;
 }
 
-.rodape .credit a {
-  color: #ffae00;
-}
-
+/* Animação icons media sociais */
 .rodape .fa {
-  color: #e90606;
   margin: 0 0.3rem;
   font-size: 1.5rem;
   animation: animacao 0.35s infinite alternate;
