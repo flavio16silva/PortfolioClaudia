@@ -46,33 +46,45 @@
 }
 /* Borboletas */
 .borboleta{
-  border-style: solid;
+  /* border-style: solid; */
   display: flex;  
   flex-wrap: wrap;
   justify-content: space-between;
  
 }
 
- .b1,.b2 {
-  width: calc(50% - 20px); 
-  margin-bottom: 10px; 
-}  
-
-
 .b1 img, 
-.b2 img {
- max-width: 100%; /* Garante que as imagens se ajustem ao contêiner */
- height: auto; /* Mantém a proporção da imagem */
+.b2 img,
+.b3 img {
+ max-width: 100%; 
+ height: auto; 
 }
 
- .borboleta .b2 img {
-  /* border-style:solid ; */
-  align-items:end;
-  justify-content: center;
-  width: 70px;
-  height: 70px; 
- 
+.b1 {
+  width: calc(50% - 20px); 
+  margin-bottom: -5px; 
+}  
+
+.b2 {
+  width: calc(50% - 5px); 
+  margin-bottom: 5px; 
 } 
+
+.borboleta .b2 img {
+  width: 70px;
+  height: 70px;  
+}
+
+.b3 {
+  width: calc(50% - 15px); 
+  margin-bottom: 5px; 
+} 
+
+.borboleta .b3 img {
+  width: 90px;
+  height: 90px;  
+} 
+
 
 /*
 .about .about__left .b2 img:hover {
@@ -84,7 +96,7 @@
    transition: all 0.5s ease;
   } */
 
-  /* Borboleta 1 */
+  /* ==== Borboleta 1 ==== */
   .borboleta .b1 {
     margin: 0 0.3rem;
     font-size: 1.5rem;
@@ -97,13 +109,13 @@
     }
   }
   
-  /* @keyframes animacao {
+  @keyframes animacao {
     to {
       transform: scale(1.1);
     }
-  } */
+  }
 
-  /* Borboleta 2 */
+  /* ===== Borboleta 2 ======= */
   .borboleta .b2 {
     margin: 0 0.3rem;
     font-size: 1.5rem;
@@ -116,11 +128,30 @@
     }
   }
   
-  /* @keyframes animacao {
+  @keyframes animacao {
     to {
       transform: scale(1.1);
     }
-  } */
+  }
+
+    /* ===== Borboleta 3 ======= */
+    .borboleta .b3 {
+      margin: 0 0.3rem;
+      font-size: 1.5rem;
+      animation: animacao 1.10s infinite alternate;
+    }
+    
+    @-webkit-keyframes animacao {
+      to {
+        transform: scale(1.1);
+      }
+    }
+    
+    @keyframes animacao {
+      to {
+        transform: scale(1.1);
+      }
+    }
   
 
  
