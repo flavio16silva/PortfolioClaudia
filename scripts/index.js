@@ -69,7 +69,7 @@ var typed = new Typed(".escrever-texto", {
   backDelay: 500
 });
 
-//Frase do Steve:
+//Frase do Pensador:
 var typed = new Typed(".citacao", {
   strings: ["Quem olha para fora sonha, quem olha para dentro desperta - Carl Jung " ],
   loop: true,
@@ -83,8 +83,8 @@ var typed = new Typed(".citacao", {
 
 
 // <!-- Cria o efeito 3D nas imagens -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-  max: 20,
-})
+// VanillaTilt.init(document.querySelectorAll(".tilt"), {
+//   max: 20,
+// })
 
 
