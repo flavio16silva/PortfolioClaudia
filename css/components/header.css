@@ -135,6 +135,11 @@ header .header__right .header__image .background {
   .images {
   margin-left: auto;
   width: 290px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   }   
 
   .images img {
@@ -213,13 +218,7 @@ header .header__right .header__image .background {
   height: 400px;
   width: 400px;
   }
-  .images {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  }
+
   /* keyframe animation */
   
   @keyframes Rotate {
