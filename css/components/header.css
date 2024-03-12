@@ -89,7 +89,7 @@ header .header__right .header__image .background {
 
 /* ===== INICIO: FOTO COM ICONES ROTACIONAL ===== */
 /* Dimensões da imagem redonda */
-.img-w {
+.img-c {
   width: 110%;
   height: auto;
   }
@@ -104,12 +104,14 @@ header .header__right .header__image .background {
   column-gap: 6rem;
   align-items: center;
   }
+
   .main h3 {
   color: #fff;
   font-size: 1.5rem;
   opacity: 0;
   animation: topSideAni 1s ease forwards;
   }
+
   .main h1 {
   color: #fff;
   font-size: 4rem;
@@ -118,6 +120,7 @@ header .header__right .header__image .background {
   animation: leftSideAni 1s ease forwards;
   animation-delay: 1s;
   }
+
   .main button {
   background-color: transparent;
   color: var(--primary-color);
@@ -128,10 +131,12 @@ header .header__right .header__image .background {
   margin-top: 2rem;
   cursor: pointer;
   }
+
   .images {
   margin-left: auto;
   width: 290px;
   }   
+
   .images img {
   border-radius: 45%;
   box-shadow: 0 0 10px #D1D9E6;
@@ -143,6 +148,7 @@ header .header__right .header__image .background {
   .main {
   position: relative;
   }
+  
   .big-circle {
   height: 110%;
   width: 110%;
