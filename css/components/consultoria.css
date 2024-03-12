@@ -1,21 +1,25 @@
 /* contato */
-
 .contact_section {
   width: 100%;
   float: left;
   padding-bottom: 90px;
   margin-top: 18rem;
+  background-color: var(--clau-color);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-.contact_taital {
+/* Nome = Consultoria */
+.contact {
   width: 100%;
   float: left;
   font-size: 40px;
-  color: #011430;
+  color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 0px;
+  padding-top: 5px;
 }
 
 .contact_section_2 {
@@ -46,7 +50,7 @@ input.mail_text::placeholder {
   color: #7c7c7d;
 }
 
-.massage-bt {
+.message-bt {
   color: #7c7c7d;
   width: 100%;
   height: 50px;
@@ -67,6 +71,7 @@ textarea#comment::placeholder {
   width: 160px;
   margin: 0 auto;
   text-align: center;
+ 
 }
 
 .send_bt a {
@@ -81,9 +86,11 @@ textarea#comment::placeholder {
   display: block;
   font-weight: bold;
   border-radius: 5px;
+  border: solid 0.5px;
 }
 
 .send_bt a:hover {
   color: #fff;
   background-color: #001431;
+  border: none;
 }
