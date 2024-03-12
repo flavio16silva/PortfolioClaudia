@@ -38,6 +38,7 @@
   position: relative;
   list-style: none;
   text-align: center;
+ 
 }
 
 /* Alinhando icone acima do texto */
@@ -52,7 +53,7 @@ li .icone {
 }
 
 li .icone:hover {
-  color:blue;
+  color: var(--clau-color); 
 }
 
 /* Espaçamento entre os li */
