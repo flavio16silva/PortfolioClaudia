@@ -294,7 +294,7 @@
 }
 
 /* Botão do Card: Contrate-me */
-#port .container .card a button{
+/* #port .container .card a button{
   position: absolute;
   z-index: 9;
   margin-top: 400px;
@@ -307,38 +307,38 @@
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
-}
+} */
 /* Dimensão dos Cards: Altura e Largura */
-#port .container .cards {
+/* #port .container .cards {
   position: relative;
   width: 100%;
   height: 100%;
   margin-top: -50px;
-}
+} */
 /* Transição entre os cards - 1 */
-#item-1:checked ~ .cards #panf-3,
+/* #item-1:checked ~ .cards #panf-3,
 #item-2:checked ~ .cards #panf-1,
 #item-3:checked ~ .cards #panf-2{
   transform: translateX(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
-}
+} */
 /* Transição entre os cards - 2*/
-#item-1:checked ~ .cards #panf-2,
+/* #item-1:checked ~ .cards #panf-2,
 #item-2:checked ~ .cards #panf-3,
 #item-3:checked ~ .cards #panf-1{
   transform: translateX(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
-}
+} */
 /* Transição entre os cards - 3*/
-#item-1:checked ~ .cards #panf-1,
+/* #item-1:checked ~ .cards #panf-1,
 #item-2:checked ~ .cards #panf-2,
 #item-3:checked ~ .cards #panf-3{
   transform: translateX(0) scale(1);
   opacity: 1;
   z-index: 1;
-}
+} */
 
 /* Media Queries */
 @media screen and (max-width: 1280px) {
