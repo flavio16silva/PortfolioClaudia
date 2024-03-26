@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* blueLight: #7DD0ED;
+blueDark: #27A6D2;
+transition: all .3s ease-in-out; */
+
+.contratar{
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.frame {
+  position: relative;
+  top: 50%;
+  left: 40%;
+  width: 800px;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: -300px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.05);
+	overflow: hidden;
+  background: #E9EDEF;
+  color: #5E5E5E;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.plan {
+	position: absolute;
+	width: 115px;
+	height: 160px;
+	top: 75px;
+	left: 150px;
+	background: #fff;
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transition;
+	
+	&.basic {
+		&:hover {
+			~ .datas .usuarios .fill,
+			~ .datas .gb .fill,
+			~ .datas .projetos .fill,
+      ~ .datas .parcerias .fill {
+				transform: scaleX(0.05) translate3d(0,0,0);
+			}
+		}
+	}
+	
+	&.pro {
+		left: 281px;
+		
+		&:hover {
+			~ .datas .usuarios .fill {
+				transform: scaleX(0.3) translate3d(0,0,0);
+			}
+			~ .datas .gb .fill {
+				transform: scaleX(0.6) translate3d(0,0,0);				
+			}
+			~ .datas .projetos .fill{
+				transform: scaleX(0.5) translate3d(0,0,0);
+			}
+      ~ .datas .parcerias .fill{
+        transform: scaleX(0.5) translate3d(0,0,0);
+      }
+		}
+		
+	}
+	
+	&.premium {
+		left: 410px;
+		
+		&:hover {
+			~ .datas .usuarios .fill{
+				transform: scaleX(0.6) translate3d(0,0,0);
+			}
+			~ .datas .gb .fill{
+				transform: scaleX(0.8) translate3d(0,0,0);
+			}
+			~ .datas .projetos .fill{
+				transform: scaleX(0.9) translate3d(0,0,0);
+			}
+      ~ .datas .parcerias .fill{
+        transform: scaleX(0.7) translate3d(0,0,0);
+      }
+		}
+		
+	}
+	
+	&:hover {
+		transform: scale(1.1) translate3d(0,0,0);
+		box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.1);
+		
+		.title {
+			background: var(--clau-color);
+		}
+		
+		.price {
+			color: var(--clau-color);
+		}
+		
+	}
+
+  &.advanced {
+		left: 539px;
+		
+		&:hover {
+			~ .datas .usuarios .fill,
+			~ .datas .gb .fill,
+			~ .datas .projetos .fill,
+      ~ .datas .parcerias .fill{
+       transform: scaleX(1) translate3d(0,0,0);
+			}
+		}
+		
+	}
+	
+	&:hover {
+		transform: scale(1.1) translate3d(0,0,0);
+		box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.1);
+		
+		.title {
+			background: var(--clau-color);
+		}
+		
+		.price {
+			color: var(--clau-color);
+		}
+		
+	}
+	
+  /* Titulo dos Cards */
+	.title {
+		height: 36px;
+		text-align: center;
+		background: var(--dark-secondary-color);
+		color: #fff;
+		font-weight: 600;
+		line-height: 36px;
+		font-size: 14px;
+		transition: transition;
+	}
+	
+	.price {
+		text-align: center;
+		font-size: 30px;	
+		line-height: 30px;
+		font-weight: 700;
+		padding: 16px 0 17px 0;
+		transition: transition;
+		
+		span {
+			display: block;
+			font-size: 12px;
+			line-height: 12px;
+			font-weight: 400;
+		}
+	}
+	
+	.line {
+		height: 3px;
+		background: #E4E4E4;
+		margin: 0 auto 7px auto;
+	}
+	
+}
+
+/* Container dos Dados */
+.datas {
+	position: absolute;
+	height: 205px;
+	width: 500px;
+	top: 260px;
+	left: 153px;
+	background: #fff;
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
+	
+	.data {
+		margin: 17px 15px 0 15px;
+    font-weight: bold;
+		
+		.text {
+			font-size: 12px;
+			height: 20px;
+			
+			.left {
+				float: left;
+			}
+			
+			.right {
+				float: right;
+			}
+			
+		}
+		
+		.line {
+			position: relative;
+			z-index: 5;
+			width: 100%;
+			height: 10px;
+			background: #E9EDEF;
+			border-radius: 5px;
+			overflow: hidden;
+			
+			.fill {
+				position: relative;
+				z-index: 1;
+				height: 10px;
+				width: 100%;
+				background: var(--clau-color);
+				transform: scaleX(0);
+				transform-origin: 0 50%;
+				transition: transition;
+				border-radius: 3px;
+			}
+			
+		}
+		
+	}
+	
+}
