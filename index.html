@@ -43,17 +43,17 @@
         <ul class="navbar__links">
           <li>
             <a href="#header">Início</a>
-            <i class="fa-solid fa-archway icone"></i>
+            <i class="fas fa-home icone"></i>
           </li>
 
           <li>
             <a href="#about">Sobre</a>
-            <i class="fa-solid fa-person icone"></i>
+            <i class="fas fa-user fa-person icone"></i>
           </li>
             
           <li>
             <a href="#skills">Serviços</a>
-            <i class="fa-regular fa-thumbs-up icone"></i>
+            <i class="fas fa-tasks icone"></i>
           </li>
 
           <li><a href="#header">
@@ -64,6 +64,11 @@
           <li>
             <a href="#projects">Empresariais</a>
             <i class="fa-regular fa-building icone"></i>
+          </li>
+
+          <li>
+            <a href="#preco">Planos</a>
+            <i class="fa-regular fa-note-sticky icone"></i>
           </li>
 
           <li>
@@ -84,13 +89,13 @@
             <li><a href="#about">Sobre</a></li>
             <li><a href="#skills">Serviços</a></li>
             <li><a href="#projects">Empresariais</a></li>
+            <li><a href="#preco">Preços</a></li>
             <li><a href="#consultoria">Consultoria</a></li>            
             <li><a href="#footer">Contato</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- HEADER -->
     <header id="header" class="max-width">
       <div class="header__left">
@@ -520,42 +525,135 @@
           </section>
         </li>
          </li>
-      </ul>
+      </ul>        
+          
+    </section>
 
-        <!-- CONSULTORIA -->
+     <!-- Preços -->
+     <section id="preco" class="frame">	
+      <div class="plan basic" onclick="void(0);">
+        <div class="title">Basic</div>
+        <div class="price">R$50<span>por mês</span></div>
+        <div class="lines">
+          <div class="line" style="width: 69px;"></div>
+          <div class="line" style="width: 59px;"></div>
+          <div class="line" style="width: 66px;"></div>
+          <div class="line" style="width: 46px;"></div>
+        </div>
+      </div>
 
+      <div class="plan pro" onclick="void(0);">
+        <div class="title">Pro</div>
+        <div class="price">R$100<span>por mês</span></div>
+        <div class="lines">
+          <div class="line" style="width: 69px;"></div>
+          <div class="line" style="width: 59px;"></div>
+          <div class="line" style="width: 66px;"></div>
+          <div class="line" style="width: 46px;"></div>
+        </div>
+      </div>
+
+      <div class="plan premium" onclick="void(0);">
+        <div class="title">Premium</div>
+        <div class="price">R$500<span>por mês</span></div>
+        <div class="lines">
+          <div class="line" style="width: 69px;"></div>
+          <div class="line" style="width: 59px;"></div>
+          <div class="line" style="width: 66px;"></div>
+          <div class="line" style="width: 46px;"></div>
+        </div>
+      </div>
+
+      <div class="plan advanced" onclick="void(0);">
+        <div class="title">Advanced</div>
+        <div class="price">R$1000<span>por mês</span></div>
+        <div class="lines">
+          <div class="line" style="width: 69px;"></div>
+          <div class="line" style="width: 59px;"></div>
+          <div class="line" style="width: 66px;"></div>
+          <div class="line" style="width: 46px;"></div>
+        </div>
+      </div>
+
+  <div class="datas">
+  
+          <div class="data usuarios">
+            <div class="text">
+              <span class="left">5 Usuarios</span>
+              <span class="right">100 Usuarios</span>
+            </div>
+            <div class="line">
+              <div class="fill"></div>
+            </div>
+          </div>
+  
+          <div class="data gb">
+            <div class="text">
+              <span class="left">20 GB</span>
+              <span class="right">200 GB</span>
+            </div>
+            <div class="line">
+              <div class="fill"></div>
+            </div>
+          </div>
+  
+          <div class="data projetos">
+            <div class="text">
+              <span class="left">1 Projetos</span>
+              <span class="right">50 Projetos</span>
+            </div>
+            <div class="line">
+              <div class="fill"></div>
+            </div>
+          </div>  
+
+          
+          <div class="data parcerias">
+            <div class="text">
+              <span class="left">1 Parceria</span>
+              <span class="right">50 Parcerias</span>
+            </div>
+            <div class="line">
+              <div class="fill"></div>
+            </div>
+            
+          </div>                 
+          
+    </div>  
+    <h2 class="contratar">Planos para Contratação</h2>
+   
+     </section>
+
+
+ <!-- CONSULTORIA -->
     <section id="consultoria">
-            <div class="contact_section layout_padding">
-              <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                      <h1 class="contact">Consultoria</h1>
-                    </div>
-                </div>
-                <div class="contact_section_2">
-                    <div class="row">
-                      <div class="col-md-12">
-                          <div class="mail_section map_form_container">
-                            <form action="">
-                                <input type="text" class="mail_text" placeholder="Nome" name="Name">
-                                <input type="text" class="mail_text" placeholder="Telefone" name="Phone Number"> 
-                                <input type="text" class="mail_text" placeholder="Email" name="Your Email">
-                                <textarea class="message-bt" placeholder="Mensagem" rows="5" id="comment" name="Message"></textarea>
-                                <div class="send_bt active"><a href="#">Enviar</a></div>
-                            </form>
-                          </div>
-                      </div>
+      <div class="contact_section layout_padding">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                <h1 class="contact">Consultoria</h1>
+              </div>
+          </div>
+          <div class="contact_section_2">
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="mail_section map_form_container">
+                      <form action="">
+                          <input type="text" class="mail_text" placeholder="Nome" name="Name">
+                          <input type="text" class="mail_text" placeholder="Telefone" name="Phone Number"> 
+                          <input type="text" class="mail_text" placeholder="Email" name="Your Email">
+                          <textarea class="message-bt" placeholder="Mensagem" rows="5" id="comment" name="Message"></textarea>
+                          <div class="send_bt active"><a href="#">Enviar</a></div>
+                      </form>
                     </div>
                 </div>
               </div>
           </div>
+        </div>
+    </div>
     </section>
 
-         <p class="texto" >  <span class="citacao"></span></p>
-          
-    </section>
-
-    
+    <p class="texto" >  <span class="citacao"></span></p>
 
     <!-- FOOTER -->
     <footer id="footer">
