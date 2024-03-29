@@ -4,46 +4,55 @@
 blueDark: #27A6D2;
 transition: all .3s ease-in-out; */
 
+section{
+	/* margin-top: 15px; */
+	/* margin-bottom: 5rem; */
+  scroll-margin-top: 17rem; 
+}
+
+/* h2 - Planos */
 .contratar{
   padding: 15px;
   margin: 15px;
   text-align: center;
   justify-content: center;
   text-transform: uppercase;
+	color: #fff;
 }
+
+/* Container Principal */
 .frame {
-  position: relative;
-  top: 50%;
-  left: 40%;
-  width: 800px;
+	position: relative;
+  top:40%;
+  /* left: 60%; */
+	width: 100%;
   height: 500px;
-  margin-top: 200px;
-  margin-left: -300px;
-  border-radius: 2px;
+  margin-top: 23px;
+  /* margin-left: -600px; */
+  border-radius: 3px;
   box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.05);
-	overflow: hidden;
-  background: #E9EDEF;
+	/* overflow: hidden; */
+  background: var(--gray);
   color: #5E5E5E;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  scroll-margin-top: 25rem;
-  
-  
+	-moz-osx-font-smoothing: grayscale;  
 }
 
+/* Quadro do Corpo dos Planos */
 .plan {
 	position: absolute;
 	width: 115px;
 	height: 160px;
 	top: 75px;
-	left: 150px;
+	left: 36%;
 	background: #fff;
 	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
 	border-radius: 3px;
 	overflow: hidden;
 	cursor: pointer;
 	transition: transition;
+
 	
 	&.basic {
 		&:hover {
@@ -57,7 +66,7 @@ transition: all .3s ease-in-out; */
 	}
 	
 	&.pro {
-		left: 281px;
+		left: 43%;
 		
 		&:hover {
 			~ .datas .usuarios .fill {
@@ -77,7 +86,7 @@ transition: all .3s ease-in-out; */
 	}
 	
 	&.premium {
-		left: 410px;
+		left: 50%;
 		
 		&:hover {
 			~ .datas .usuarios .fill{
@@ -111,7 +120,7 @@ transition: all .3s ease-in-out; */
 	}
 
   &.advanced {
-		left: 539px;
+		left: 57%;
 		
 		&:hover {
 			~ .datas .usuarios .fill,
@@ -178,15 +187,16 @@ transition: all .3s ease-in-out; */
 .datas {
 	position: absolute;
 	height: 205px;
-	width: 500px;
+	width: 555px;
 	top: 260px;
-	left: 153px;
+	left: 36%;
 	background: #fff;
 	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
 	
+	
 	.data {
 		margin: 17px 15px 0 15px;
-    font-weight: bold;
+    
 		
 		.text {
 			font-size: 12px;
@@ -194,6 +204,7 @@ transition: all .3s ease-in-out; */
 			
 			.left {
 				float: left;
+				
 			}
 			
 			.right {
