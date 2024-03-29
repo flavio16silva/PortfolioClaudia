@@ -6,11 +6,12 @@
   margin-right: 110px;
   padding-top: 10px;
   padding-bottom: 90px;
-  margin-top: 18rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
   background-color: var(--clau-color);
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  scroll-margin-top: 10rem; 
 }
 
 /* Nome = Consultoria */
