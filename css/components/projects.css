@@ -56,14 +56,7 @@
   text-decoration: underline;
 }
 
-.projects .texto{
-  /* align-items: center;
-  justify-content: center; */
-  text-align: center;
-  margin-top: 100px;
-  font-weight: 600;
-  color:var(--primary-color);
-}
+
 
 @media only screen and (max-width: 768px) {
   .projects ul li,
