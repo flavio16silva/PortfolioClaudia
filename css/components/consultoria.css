@@ -1,7 +1,9 @@
 /* contato */
 .contact_section {
-  width: 100%;
+  width:90%;
   float: left;
+  margin-left:110px;
+  margin-right: 110px;
   padding-top: 10px;
   padding-bottom: 90px;
   margin-top: 18rem;
