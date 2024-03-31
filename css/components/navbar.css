@@ -5,10 +5,12 @@
   width: 100%;
   height: auto;
   z-index: 10;
-  background-color: var(--white); 
+  background:transparent;
+  backdrop-filter: blur(10px);
+  /* background-color: var(--white);  */
   /* overflow: hidden; */
-  transition: height 0.2s linear; 
-  transition: .7s; 
+  /* transition: height 0.2s linear; 
+  transition: .7s;  */
 }
 
 .navbar .navbar__content {
