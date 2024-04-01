@@ -42,10 +42,10 @@ section{
 /* Quadro do Corpo dos Planos */
 .plan {
 	position: absolute;
-	width: 115px;
+	width: 125px;
 	height: 160px;
 	top: 75px;
-	left: 36%;
+	left: 25%;
 	background: #fff;
 	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
 	border-radius: 3px;
@@ -54,7 +54,7 @@ section{
 	transition: transition;
 
 	
-	&.basic {
+	&.starter {
 		&:hover {
 			~ .datas .usuarios .fill,
 			~ .datas .gb .fill,
@@ -64,9 +64,28 @@ section{
 			}
 		}
 	}
+
+	&.basic {
+		left: 35%;
+		
+		&:hover {
+			~ .datas .usuarios .fill {
+				transform: scaleX(0.3) translate3d(0,0,0);
+			}
+			~ .datas .gb .fill {
+				transform: scaleX(0.6) translate3d(0,0,0);				
+			}
+			~ .datas .projetos .fill{
+				transform: scaleX(0.5) translate3d(0,0,0);
+			}
+      ~ .datas .parcerias .fill{
+        transform: scaleX(0.5) translate3d(0,0,0);
+      }
+		}
+	}
 	
 	&.pro {
-		left: 43%;
+		left: 45%;
 		
 		&:hover {
 			~ .datas .usuarios .fill {
@@ -86,7 +105,7 @@ section{
 	}
 	
 	&.premium {
-		left: 50%;
+		left: 55%;
 		
 		&:hover {
 			~ .datas .usuarios .fill{
@@ -120,7 +139,35 @@ section{
 	}
 
   &.advanced {
-		left: 57%;
+		left: 65%;
+		
+		&:hover {
+			~ .datas .usuarios .fill,
+			~ .datas .gb .fill,
+			~ .datas .projetos .fill,
+      ~ .datas .parcerias .fill{
+       transform: scaleX(1) translate3d(0,0,0);
+			}
+		}
+		
+	}
+	
+	&:hover {
+		transform: scale(1.1) translate3d(0,0,0);
+		box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.1);
+		
+		.title {
+			background: var(--clau-color);
+		}
+		
+		.price {
+			color: var(--clau-color);
+		}
+		
+	}
+
+	&.business {
+		left: 75%;
 		
 		&:hover {
 			~ .datas .usuarios .fill,
