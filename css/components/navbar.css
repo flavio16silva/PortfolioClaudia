@@ -28,6 +28,7 @@
   /* flex-wrap: wrap; */
 }
 
+/* Nomes da Navbar */
 a {
   color: var(--clau-color);
   font-size: 14px; 
@@ -37,6 +38,7 @@ a {
   font-weight: bold;   
 }
 
+/* icones  */
 .navbar .navbar__content .navbar__links li a .icone {
   display: block;
   margin: 0 auto;
