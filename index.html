@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/bde0955b04.js" crossorigin="anonymous"></script>
 
@@ -26,8 +27,14 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
-     
-    
+
+       <!-- Vendor CSS Files -->
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!--Ícone que ficará na aba do navegador-->
     <link
@@ -62,7 +69,7 @@
           </li>
 
           <li><a href="#header">
-            <img src="assets/logoClaudia.jpg" alt="Claudia Silva" />          
+            <img src="assets/logoClaudia_semfundo.png" alt="Claudia Silva" />          
           </a>
         </li>
 
@@ -275,7 +282,53 @@
     </section>
 
     <!-- Psicoterapia -->
+      <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services">
+      <div class="psico">
 
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Services Section -->
     
 
     <!-- PROJETOS -->
@@ -541,52 +594,77 @@
      <section id="preco" class="frame">	
 
       <h2 class="contratar">Planos para Contratação</h2>
+      <div class="top-row">
+            <div class="plan starter" onclick="void(0);">
+              <div class="title">Starter</div>
+              <div class="price">Conhecendo nossos serviços, estrutura e cultura.
+                                <span>Acesso limitado</span></div>
+              <!-- <div class="lines">
+                <div class="line" style="width: 69px;"></div>
+                <div class="line" style="width: 59px;"></div>
+                <div class="line" style="width: 66px;"></div>
+                <div class="line" style="width: 46px;"></div>
+              </div> -->
+            </div>
 
-      <div class="plan basic" onclick="void(0);">
-        <div class="title">Basic</div>
-        <div class="price">R$50<span>por mês</span></div>
-        <div class="lines">
-          <div class="line" style="width: 69px;"></div>
-          <div class="line" style="width: 59px;"></div>
-          <div class="line" style="width: 66px;"></div>
-          <div class="line" style="width: 46px;"></div>
-        </div>
+            <div class="plan basic" onclick="void(0);">
+              <div class="title">Basic</div>
+              <div class="price">Funcionalidades intermediárias, adequado para pequenas e médias empresas. <span>Acesso aberto </span></div>
+              <!-- <div class="lines">
+                <div class="line" style="width: 69px;"></div>
+                <div class="line" style="width: 59px;"></div>
+                <div class="line" style="width: 66px;"></div>
+                <div class="line" style="width: 46px;"></div>
+              </div> -->
+            </div>
+
+            <div class="plan pro" onclick="void(0);">
+              <div class="title">Pro</div>
+              <div class="price">R$500<span>por mês</span></div>
+              <div class="lines">
+                <div class="line" style="width: 69px;"></div>
+                <div class="line" style="width: 59px;"></div>
+                <div class="line" style="width: 66px;"></div>
+                <div class="line" style="width: 46px;"></div>
+              </div>
+            </div>
       </div>
 
-      <div class="plan pro" onclick="void(0);">
-        <div class="title">Pro</div>
-        <div class="price">R$100<span>por mês</span></div>
-        <div class="lines">
-          <div class="line" style="width: 69px;"></div>
-          <div class="line" style="width: 59px;"></div>
-          <div class="line" style="width: 66px;"></div>
-          <div class="line" style="width: 46px;"></div>
-        </div>
-      </div>
+      <div class="bottom-row">
+          <div class="plan premium" onclick="void(0);">
+            <div class="title">Premium</div>
+            <div class="price">R$1000<span>por mês</span></div>
+            <div class="lines">
+              <div class="line" style="width: 69px;"></div>
+              <div class="line" style="width: 59px;"></div>
+              <div class="line" style="width: 66px;"></div>
+              <div class="line" style="width: 46px;"></div>
+            </div>
+          </div>
 
-      <div class="plan premium" onclick="void(0);">
-        <div class="title">Premium</div>
-        <div class="price">R$500<span>por mês</span></div>
-        <div class="lines">
-          <div class="line" style="width: 69px;"></div>
-          <div class="line" style="width: 59px;"></div>
-          <div class="line" style="width: 66px;"></div>
-          <div class="line" style="width: 46px;"></div>
-        </div>
-      </div>
+          <div class="plan advanced" onclick="void(0);">
+            <div class="title">Advanced</div>
+            <div class="price">R$2000<span>por mês</span></div>
+            <div class="lines">
+              <div class="line" style="width: 69px;"></div>
+              <div class="line" style="width: 59px;"></div>
+              <div class="line" style="width: 66px;"></div>
+              <div class="line" style="width: 46px;"></div>
+            </div>
+          </div>
 
-      <div class="plan advanced" onclick="void(0);">
-        <div class="title">Advanced</div>
-        <div class="price">R$1000<span>por mês</span></div>
-        <div class="lines">
-          <div class="line" style="width: 69px;"></div>
-          <div class="line" style="width: 59px;"></div>
-          <div class="line" style="width: 66px;"></div>
-          <div class="line" style="width: 46px;"></div>
+          <div class="plan business" onclick="void(0);">
+            <div class="title">Business</div>
+            <div class="price">R$4000<span>por mês</span></div>
+            <div class="lines">
+              <div class="line" style="width: 69px;"></div>
+              <div class="line" style="width: 59px;"></div>
+              <div class="line" style="width: 66px;"></div>
+              <div class="line" style="width: 46px;"></div>
+            </div>
+          </div>
         </div>
-      </div>
-
-  <div class="datas">
+  <!-- <div class="datas">
   
           <div class="data usuarios">
             <div class="text">
@@ -630,7 +708,7 @@
             
           </div>                 
           
-    </div>  
+    </div>   -->
   
    
      </section>
@@ -640,13 +718,13 @@
     <section id="consultoria">
       <div class="contact_section layout_padding">
         <div class="container">
-          <div class="row">
+          <div class="linha">
               <div class="col-sm-12">
                 <h1 class="contact">Consultoria</h1>
               </div>
           </div>
           <div class="contact_section_2">
-              <div class="row">
+              <div class="linha">
                 <div class="col-md-12">
                     <div class="mail_section map_form_container">
                       <form action="">
