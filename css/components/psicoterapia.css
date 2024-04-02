@@ -1,0 +1,131 @@
+
+/*Services*/
+
+.services{
+ /* padding: 60px 0; */
+ /* overflow: hidden; */
+ /* display: flex; */
+
+}
+
+.psico {
+  /* max-width: 1000px; */
+  /* --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0; */
+  /* width: 60%; */
+  /* padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5); */
+  /* margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; */
+
+}
+
+/* Titulo - h2 */
+/* .section-title h2 {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 30px;
+  color: #2f4d5a;
+  z-index: 2;
+  text-align: center;
+}  */
+
+/* Paragrafo */
+/* .section-title p {
+  margin-bottom: 0;
+  text-align: center;
+} */
+
+.row{
+  /* --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0; */
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; */
+  
+  /* margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x)); */
+}
+
+/* .col-md-6{
+  display: flex;
+  align-items: stretch !important;
+  flex: 0 0 auto;
+  width: 25%;
+  margin-bottom: 0 !important;
+
+} */
+
+
+/* .services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+} */
+
+/* .services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+} */
+
+/* .services .icon-box:hover::before {
+  background: #67b0d1;
+  top: 0;
+  border-radius: 0px;
+} */
+/* 
+.services .icon {
+  margin-bottom: 15px;
+} */
+
+/* .services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #67b0d1;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* .services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+} */
+
+/* .services .title a {
+  color: #111;
+} */
+
+/* .services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+} */
+/* 
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+  color: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #fff;
+} */
