@@ -16,7 +16,7 @@ section{
   text-align: center;
   justify-content: center;
   text-transform: uppercase;
-	color: #fff;
+	color: var(--dark-secondary-color);
 }
 
 .top-row,
@@ -221,7 +221,7 @@ section{
 	
 	.price {
 		text-align: center;
-		font-size: 14px;	
+		font-size: 13px;	
 		line-height: 30px;
 		font-weight: 700;
 		padding: 16px 0 17px 0;
