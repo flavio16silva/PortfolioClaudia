@@ -109,25 +109,30 @@
   border-radius: 0px;
 }
 
+/* Classe do Icone */
 .services .icon {
   margin-bottom: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
   
 }
 
+/* Icone */
 .services .icon i {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1;
   color: #67b0d1;
   transition: all 0.3s ease-in-out;
+  margin-left: -5px;
 }
 
+/* Titulo do Card */
 .services .title {
   font-weight: 700;
   margin-top: -57px;
-  margin-left: 70px;
+  margin-left: 100px;
   margin-bottom: 15px;
   font-size: 25px;
+  justify-content: center;
 }
 
 .services .title a {
