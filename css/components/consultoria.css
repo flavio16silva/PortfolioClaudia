@@ -1,4 +1,8 @@
 /* contato */
+
+#consultoria {
+  margin-top:15px;
+}
 .contact_section {
   width:90%;
   float: left;
@@ -6,12 +10,12 @@
   margin-right: 110px;
   padding-top: 10px;
   padding-bottom: 90px;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 10rem;
   background-color: var(--clau-color);
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  scroll-margin-top: 10rem; 
+  scroll-margin-top: 15rem; 
 }
 
 /* Nome = Consultoria */
@@ -100,13 +104,3 @@ textarea#comment::placeholder {
   border: none;
 }
 
-/* Texto auto-escrito */
-.texto {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: -34px;
-  padding-bottom: 80px;
-  font-weight: 600;
-  color:var(--primary-color);
-}
