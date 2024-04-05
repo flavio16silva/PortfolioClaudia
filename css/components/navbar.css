@@ -73,9 +73,9 @@ li .icone {
   color: var(--primary-color); 
 }
 
-li .icone:hover {
+/* li .icone:hover {
   color: var(--clau-color); 
-}
+} */
 
 /* Logo Palma */
 li a > img {
@@ -100,7 +100,7 @@ li a > img {
 
 /*Ao passar do mouse nos links navbar  */
 .navbar .navbar__content .navbar__links li:hover {
-  color: var(--clau-color);
+  /* color: var(--clau-color); */
   transition: 0.3s ease;
   transform: scale(1.2); 
 }
