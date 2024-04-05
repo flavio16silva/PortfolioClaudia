@@ -78,7 +78,7 @@ li .icone {
 } */
 
 /* Logo Palma */
-li a > img {
+.navbar a > img {
   width: 125px;
   height: 123px;
   margin-bottom: 10px;
