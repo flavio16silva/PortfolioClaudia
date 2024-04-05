@@ -40,12 +40,14 @@ footer .footer__content .tertiary-title {
   color: var(--white);
 }
 
-footer .footer__content p {
-  color: var(--white);
-}
+/* Frase do footer - Para você.... */
+/* footer .footer__content p {
+  
+} */
 
-/* Frase do Rodapé: Ficarei feliz.. */
+/* Frase do Rodapé: Para você.... */
 footer .footer__content .conversar {
+  color: var(--white);
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -87,6 +89,7 @@ footer .footer__content .conversar {
   text-transform: none;
 }
 
+/* Icones de Informações para Contato */
 .rodape .box-container .caixa p i {
   line-height: 0.5rem;
   padding-right: 1rem;
@@ -98,12 +101,19 @@ footer .footer__content .conversar {
   font-size: 1.5rem;
   color: var(--white);
   padding: 0.3rem 0;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   display: block;
+}
+
+/* Icones como setas > */
+.rodape .box-container .caixa a i {  
+  margin-right: 5px;
 }
 
 .rodape .box-container .caixa a:hover {
   color: #0c1bbdc1;
+  text-transform: uppercase;
+  transition:ease-in-out all 0.5s;
 }
 
 .rodape .box-container .caixa .share {
