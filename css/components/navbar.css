@@ -78,10 +78,11 @@ li .icone:hover {
 }
 
 /* Logo Palma */
-/* li a > img {
-  width: 100px;
-  height: 100px;
-} */
+li a > img {
+  width: 125px;
+  height: 123px;
+  margin-bottom: 10px;
+}
 
 /* Espaçamento entre os li */
 .navbar .navbar__content .navbar__links li:not(:last-of-type) {
