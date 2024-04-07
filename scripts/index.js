@@ -1,11 +1,16 @@
+//Barra de navegação responsiva em dispositivos móveis
+// ---------------------------------------------
+//Seleção de Elementos HTML:
 const navbar = document.querySelector('.navbar');
 const mobileNavbar = document.querySelector('.navbar__mobile');
 const button = document.querySelector('.burguer');
 
+//Evento de clique no botão do menu hamburguer:
 button.addEventListener('click', function () {
   mobileNavbar.classList.toggle('active');
 });
 
+//Evento de rolagem da janela:
 window.addEventListener('scroll', function () {
   if (this.window.pageYOffset > 0) return navbar.classList.add('active');
   return navbar.classList.remove('active');
@@ -14,7 +19,7 @@ window.addEventListener('scroll', function () {
 
 
 
-//mostra se o usuário está na guia da página, caso ele saia, mostra a mensagem e a imagem.
+//Mostra se o usuário está na guia da página, caso ele saia, mostra a mensagem e a imagem.
 document.addEventListener('visibilitychange',
   function () {
       if (document.visibilityState === "visible") {
@@ -30,37 +35,10 @@ document.addEventListener('visibilitychange',
 
 // const typing = document.querySelector('[data-js="typing"]')
 
-// const messages = ["Desenvolvendo em Front End", "Estudando Java Script", "Construindo projetos sempre"]
+/* ----- Efeito de Escrever no inicio da página ----
+  cria um array de objetos, com as frases a serem escritas, se vai durar sempre, a velocidade da escrita, a velocidade de volta da escrita e o atraso para escrever.
+*/ 
 
-// let messageIndex = 0
-// let characterIndex = 0
-// let currentMessage = ''
-// let currentCharacters = ''
-
-// const type = () => {
-//   if(messageIndex === messages.length) {
-//     messageIndex = 0
-//   }
-// }
-
-// currentMessage = messages[messageIndex]
-// currentCharacters = currentMessage.slice(0, characterIndex++)
-// typing.textContent = currentCharacters
-
-// if(currentCharacters.length === currentMessage.length) {
-//   messageIndex++
-//   characterIndex = 0
-// }
-
-// setInterval(type,200)
-
-
-
-
-
-// Efeito de Escrever no inicio da página
-// cria um array de objetos, com as frases a serem escritas,
-// se vai durar sempre, a velocidade da escrita, a velocidade de volta da escrita e o atraso para escrever.
 var typed = new Typed(".escrever-texto", {
   strings: ["avalio para porte de armas", "realizo seleção e treinamento", "faço avaliação de desempenho."],
   loop: true,
@@ -87,4 +65,22 @@ var typed = new Typed(".citacao", {
 //   max: 20,
 // })
 
+//Botão de voltar ao Topo
 
+window.addEventListener('scroll', function(){
+  let scroll = document.querySelector('.scrollTop')
+      scroll.classList.toggle('active', window.scrollY > 450)
+})
+
+function backTop(){
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  })
+}
+
+
+
+// function scrollToTop() {
+//   window.scrollTo(0, 0)
+// }
