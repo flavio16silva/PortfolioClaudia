@@ -28,7 +28,66 @@ footer {
 }
 
 
+/*---------------- Link do Whastapp ----------------- */
+/* Div Geral */
+#div-fixa {
+  position:fixed;
+  bottom:20px;
+  margin: 0 20px;
+  background: var(--clau-color);
+  width: 210px;  
+  height: 45px;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
+/* Imagem do Whatsapp */
+#div-fixa img{
+  width: 40px;
+  height: 40px;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+/* Classe da img e span */
+#div-fixa a .flex-itens{
+  display: flex;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+
+/* Span - Converse comigo! */
+#div-fixa a .flex-itens span{
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--black);
+  margin-left: 10px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.flutuar {
+  animation-name: flutuar;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+  from{
+    transform: translate3d(0, 0, 0);
+    filter:brightness(70%);
+  }
+
+  to{
+    transform: translate3d(0, -15px, 0);
+    filter:brightness(100%);
+  }
+}
 
 /* footer .footer__content {
   text-align: center;
