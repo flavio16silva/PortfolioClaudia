@@ -11,10 +11,10 @@ button.addEventListener('click', function () {
 });
 
 //Evento de rolagem da janela:
-window.addEventListener('scroll', function () {
-  if (this.window.pageYOffset > 0) return navbar.classList.add('active');
-  return navbar.classList.remove('active');
-});
+// window.addEventListener('scroll', function () {
+//   if (this.window.pageYOffset > 0) return navbar.classList.add('active');
+//   return navbar.classList.remove('active');
+// });
 
 
 
@@ -48,13 +48,13 @@ var typed = new Typed(".escrever-texto", {
 });
 
 //Frase do Pensador:
-var typed = new Typed(".citacao", {
-  strings: ["Quem olha para fora sonha, quem olha para dentro desperta - Carl Jung " ],
-  loop: true,
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 500
-});
+// var typed = new Typed(".citacao", {
+//   strings: ["Quem olha para fora sonha, quem olha para dentro desperta - Carl Jung " ],
+//   loop: true,
+//   typeSpeed: 50,
+//   backSpeed: 25,
+//   backDelay: 500
+// });
 
 
 
@@ -65,22 +65,29 @@ var typed = new Typed(".citacao", {
 //   max: 20,
 // })
 
-//Botão de voltar ao Topo
-
-window.addEventListener('scroll', function(){
-  let scroll = document.querySelector('.scrollTop')
-      scroll.classList.toggle('active', window.scrollY > 450)
-})
-
-function backTop(){
-  window.scrollTo({
-    top:0,
-    behavior:'smooth'
-  })
+/*------------- Botão de voltar ao Topo ------------*/
+window.onscroll = function() {
+   scroll();
 }
 
+/* Função botão quando usar o scroll */
+function scroll() {
+      let btn = document.getElementById("btnTop")
+      if (document.documentElement.scrollTop > 90) {
+        btn.style.opacity = "1"
+        btn.style.right = "0"
+    } else {
+        btn.style.opacity = "0"
+        btn.style.right = "70px"
+    }
+    
+}
 
-
-// function scrollToTop() {
-//   window.scrollTo(0, 0)
-// }
+/* Função ir ao Topo*/
+  function backToTop() {
+    // document.documentElement.scrollTop = 0
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  })
+  }
