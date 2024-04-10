@@ -75,7 +75,13 @@ footer {
   margin-bottom: 4px;
   font-size: 16px;
   min-width: 140px;
-  
+  opacity: 0;
+}
+
+/* Span - aparecer e desaparecer com função no JS */
+#div-fixa a .flex-itens span.aparecer{
+  transition: 0.5s all;
+  opacity: 1;
 }
 
 .flutuar {
