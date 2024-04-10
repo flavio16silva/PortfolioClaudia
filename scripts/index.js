@@ -103,6 +103,8 @@ function scroll() {
   }, 5000)
 
   /*Estilizando o Span*/
+  setTimeout(function(){
   setInterval(function() {
     span.classList.toggle('aparecer')
   }, 5000) 
+}, 200)
