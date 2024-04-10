@@ -24,10 +24,10 @@ document.addEventListener('visibilitychange',
   function () {
       if (document.visibilityState === "visible") {
           document.title = "Portfolio | Claudia Palma";
-          $("#favicon").attr("href", "js/...");
+          // $("#favicon").attr("href", "js/...");
       } else {
           document.title = "Volte aqui!";
-          $("#favicon").attr("href", "js/favhand.png");
+          // $("#favicon").attr("href", "js/favhand.png");
       }
   });
 
