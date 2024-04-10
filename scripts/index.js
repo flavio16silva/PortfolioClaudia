@@ -98,3 +98,8 @@ function scroll() {
   setInterval(function() {
     content.classList.toggle('shrink')
   }, 5000)
+
+  /*Estilizando o Span*/
+  setInterval(function() {
+    span.classList.toggle('aparecer')
+  }, 5100) 
