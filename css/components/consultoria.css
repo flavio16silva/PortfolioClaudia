@@ -15,6 +15,7 @@
   padding-bottom: 90px;
   margin: 5rem auto 10rem;
   
+  
 }
 
 /* Nome = Consultoria */
@@ -31,6 +32,41 @@
   padding-top: 60px;
   margin-right: 70px;
   margin-left: -70px;
+  /* border-style: dashed; */
+  letter-spacing: 2px;
+  height: 250px;
+}
+
+.contact .icon_consultoria {
+  cursor: none;
+  /* border-style: dashed; */ 
+
+}
+
+.icon_mov {
+  animation-name: icon_mov;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes icon_mov {
+  0% {
+    top: -30px; /* Posição acima da palavra */
+    filter: brightness(50%);
+  }
+
+  50% {
+    top: 0px; /* Posição abaixo da palavra */
+    filter: brightness(100%);
+  }
+
+  100% {
+    top: 30px; /* Posição acima da palavra */
+    filter: brightness(50%);
+  }
 }
 
 .caixa_consultoria {
@@ -97,6 +133,7 @@
   height: 100%;
   box-shadow: inset 0 0 10px rgba(04, 03, 05, .25);
 } 
+
 
 
 /* Container da Sessão Consultoria */
