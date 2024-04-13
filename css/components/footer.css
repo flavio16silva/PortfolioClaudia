@@ -272,6 +272,11 @@ footer .footer__content .footer__copyright {
   color: var(--primary-color);
 }
 
+/* Icone do Linkedin */
+.credits .fa {
+  margin-left: 5px;
+}
+
 
 /* Animação icons media sociais */
 .rodape .fa {
