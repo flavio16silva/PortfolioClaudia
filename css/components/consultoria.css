@@ -54,17 +54,17 @@
 
 @keyframes icon_mov {
   0% {
-    top: -30px; /* Posição acima da palavra */
+    top: -30px; 
     filter: brightness(50%);
   }
 
   50% {
-    top: 0px; /* Posição abaixo da palavra */
+    top: 0px;  
     filter: brightness(100%);
   }
 
   100% {
-    top: 30px; /* Posição acima da palavra */
+    top: 30px;  
     filter: brightness(50%);
   }
 }
