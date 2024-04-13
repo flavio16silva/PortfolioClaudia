@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%; /* Defina a largura desejada para a seção */
-  max-width: 800px; /* Defina a largura máxima desejada */
-  min-width: 300px; /* Defina uma largura mínima opcional */;
+  width: 80%; 
+  max-width: 800px; 
+  min-width: 300px; 
   background-color: var(--clau-color);
   box-shadow: 0 15px 35px rgba(04, 03, 05, .5);  
   scroll-margin-top: 15rem; 
@@ -32,7 +32,6 @@
   padding-top: 60px;
   margin-right: 70px;
   margin-left: -70px;
-  /* border-style: dashed; */
   letter-spacing: 2px;
   height: 250px;
 }
