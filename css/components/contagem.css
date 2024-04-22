@@ -1,0 +1,59 @@
+
+
+
+.simply-countdown {
+  /* The countdown */
+  margin-top: 23em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.simply-countdown > .simply-section {
+  /* coutndown blocks */
+  display: inline-block;
+  width: 110px;
+  height: 120px;
+  background: rgba(69, 69, 102, 0.901);
+  border-bottom: 4px solid rgba(250, 70, 89, 0.5);
+  margin: 0 7px;
+  position: relative;
+  animation: pulse 1.01s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.simply-countdown > .simply-section > div {
+  /* countdown block inner div */
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  width: 110px;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  color: white;
+  /* amounts and words */
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 40px;
+  /* amounts */
+}
+
+.simply-countdown > .simply-section .simply-word {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 12px;
+  /* words */
+}
