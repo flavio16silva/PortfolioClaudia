@@ -1,34 +1,17 @@
-
-
-    // var d = new Date(new Date().getTime() + 800 * 120 * 120 * 2000);
-
-    // // default example
-    // simplyCountdown('.simply-countdown-one', {
-    //     year: d.getFullYear(),
-    //     month: d.getMonth() + 1,
-    //     day: d.getDate()
-    // });
-
-    // //jQuery example
-    // $('#simply-countdown-losange').simplyCountdown({
-    //     year: d.getFullYear(),
-    //     month: d.getMonth() + 1,
-    //     day: d.getDate(),
-    //     enableUtc: false
-    // });
-
-    document.addEventListener('DOMContentLoaded', function() {
-      simplyCountdown('.simply-countdown-one');
+// Aguarda o evento de carregamento do DOM para garantir que o documento HTML tenha sido completamente carregado antes de executar o código
+document.addEventListener('DOMContentLoaded', function() {
+  // Chama a função contagemregressiva quando o DOM estiver carregado
+      contagemregressiva('.contagem-regressiva-um');
   });
   
 
-
+// Declaração de uma função autoinvocada que recebe um objeto exports como parâmetro
   (function (exports) {
     'use strict';
 
-    var simplyCountdown;
+    var contagemregressiva;
 
-    simplyCountdown = function (elt, args) {
+    contagemregressiva = function (elt, args) {
         var parameters = {
                 year: new Date().getFullYear() + 1,
                 month: 0, // Janeiro
@@ -50,10 +33,10 @@
                     return;
                 },
                 refresh: 1000,
-                inlineClass: 'simply-countdown-inline',
-                sectionClass: 'simply-section',
-                amountClass: 'simply-amount',
-                wordClass: 'simply-word',
+                inlineClass: 'contagem-regressiva-inline',
+                sectionClass: 'simples-sessao',
+                amountClass: 'simples-quantidade',
+                wordClass: 'simples-palavra',
                 zeroPad: false
             },
             interval,
@@ -67,7 +50,7 @@
             seconds,
             cd = document.querySelectorAll(elt);
 
-        Array.prototype.forEach.call(cd, function (countdown) {
+        Array.prototype.forEach.call(cd, function (contagem) {
             var refresh = function () {
                 now = new Date();
                 if (parameters.enableUtc) {
@@ -121,23 +104,23 @@
                 }
 
                 if (parameters.inline) {
-                    countdown.innerHTML =
+                    contagem.innerHTML =
                         days + ' ' + dayWord + ', ' +
                         hours + ' ' + hourWord + ', ' +
                         minutes + ' ' + minuteWord + ', ' +
                         seconds + ' ' + secondWord + '.';
                 } else {
-                    countdown.querySelector('.simply-days-section .simply-amount').textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
-                    countdown.querySelector('.simply-days-section .simply-word').textContent = dayWord;
+                    contagem.querySelector('.simples-dia .simples-quantidade').textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
+                    contagem.querySelector('.simples-dia .simples-palavra').textContent = dayWord;
 
-                    countdown.querySelector('.simply-hours-section .simply-amount').textContent = (parameters.zeroPad && hours.toString().length < 2 ? '0' : '') + hours;
-                    countdown.querySelector('.simply-hours-section .simply-word').textContent = hourWord;
+                    contagem.querySelector('.simples-hora .simples-quantidade').textContent = (parameters.zeroPad && hours.toString().length < 2 ? '0' : '') + hours;
+                    contagem.querySelector('.simples-hora .simples-palavra').textContent = hourWord;
 
-                    countdown.querySelector('.simply-minutes-section .simply-amount').textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
-                    countdown.querySelector('.simply-minutes-section .simply-word').textContent = minuteWord;
+                    contagem.querySelector('.simples-minuto .simples-quantidade').textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
+                    contagem.querySelector('.simples-minuto .simples-palavra').textContent = minuteWord;
 
-                    countdown.querySelector('.simply-seconds-section .simply-amount').textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
-                    countdown.querySelector('.simply-seconds-section .simply-word').textContent = secondWord;
+                    contagem.querySelector('.simples-segundo .simples-quantidade').textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
+                    contagem.querySelector('.simples-segundo .simples-palavra').textContent = secondWord;
                 }
             };
 
@@ -169,7 +152,7 @@
         });
     };
 
-    exports.simplyCountdown = simplyCountdown;
+    exports.contagemregressiva = contagemregressiva;
 })(window);
 
 
