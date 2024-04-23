@@ -13,8 +13,8 @@
   display: inline-block;
   width: 110px;
   height: 120px;
-  background: rgba(69, 69, 102, 0.901);
-  border-bottom: 4px solid rgba(250, 70, 89, 0.5);
+  background: rgba(81, 81, 92, 0.885);
+  border-bottom: 4px solid rgba(147, 8, 22, 0.5);
   margin: 0 7px;
   position: relative;
   animation: pulse 1.01s ease infinite;
