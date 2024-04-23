@@ -31,6 +31,7 @@
     transform: scale(1);
   }
 }
+
 .simply-countdown > .simply-section > div {
   /* countdown block inner div */
   display: table-cell;
@@ -46,13 +47,14 @@
   /* amounts and words */
 }
 
-
+/* Contagem Númerica */
 .simply-countdown > .simply-section .simply-amount {
   font-size: 40px;
   font-weight: bold;
   /* amounts */
 }
 
+/* Dias, horas, Minutos e Segundos */
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
