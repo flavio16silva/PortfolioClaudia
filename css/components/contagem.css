@@ -1,14 +1,14 @@
 
 
 
-.simply-countdown {
+.contagem-regressiva {
   /* The countdown */
   margin-top: 23em;
   margin-bottom: 3em;
   text-align: center;
 }
 
-.simply-countdown > .simply-section {
+.contagem-regressiva > .simples-sessao {
   /* coutndown blocks */
   display: inline-block;
   width: 110px;
@@ -32,7 +32,7 @@
   }
 }
 
-.simply-countdown > .simply-section > div {
+.contagem-regressiva > .simples-sessao > div {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
@@ -40,22 +40,22 @@
   width: 110px;
 }
 
-.simply-countdown > .simply-section .simply-amount,
-.simply-countdown > .simply-section .simply-word {
+.contagem-regressiva > .simples-sessao .simples-quantidade,
+.contagem-regressiva > .simples-sessao .simples-palavra {
   display: block;
   color: white;
   /* amounts and words */
 }
 
 /* Contagem Númerica */
-.simply-countdown > .simply-section .simply-amount {
+.contagem-regressiva > .simples-sessao .simples-quantidade {
   font-size: 40px;
   font-weight: bold;
   /* amounts */
 }
 
 /* Dias, horas, Minutos e Segundos */
-.simply-countdown > .simply-section .simply-word {
+.contagem-regressiva > .simples-sessao .simples-palavra {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   font-size: 12px;
