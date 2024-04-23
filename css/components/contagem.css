@@ -46,8 +46,10 @@
   /* amounts and words */
 }
 
+
 .simply-countdown > .simply-section .simply-amount {
   font-size: 40px;
+  font-weight: bold;
   /* amounts */
 }
 
@@ -55,5 +57,7 @@
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
   /* words */
 }
