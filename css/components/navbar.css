@@ -8,10 +8,7 @@
   background:transparent;
   /*backdrop-filter: blur(5px); transparencia da navbar*/
   background-color: transparent;
-  /* background-color: var(--white);  */
-  /* overflow: hidden; */
-  /* transition: height 0.2s linear; 
-  transition: .7s;  */
+  
 }
 
 .navbar .navbar__content {
