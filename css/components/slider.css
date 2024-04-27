@@ -48,10 +48,25 @@ section.slider {
   color: var(--white);
 }
 
-.conteudo {
-  
+.conteudo .titulo_span {
+  padding: 15px;
+  font-size: 14px;
+	text-transform: uppercase;
 }
 
+.conteudo .titulo_h2{
+  padding-top: 15px;
+  padding-bottom: 40px;
+  font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.conteudo .texto_p{
+  font-size: 13px;
+	letter-spacing: 0.25px;
+	line-height: 24px;
+}
 
 
 /* Marcadores para passar os slides - bolinhas */
