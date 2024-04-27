@@ -50,7 +50,7 @@ section.slider {
 
 .conteudo .titulo_span {
   padding: 15px;
-  font-size: 14px;
+  font-size: 18px;
 	text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@ section.slider {
 }
 
 .conteudo .texto_p{
-  font-size: 13px;
+  font-size: 20px;
 	letter-spacing: 0.25px;
 	line-height: 24px;
 }
