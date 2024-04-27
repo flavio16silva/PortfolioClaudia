@@ -6,7 +6,7 @@ let direction = 1; // Variável para controlar a direção do slide
 
 setInterval(() => {
   proximaImg();
-}, 5000);
+}, 10000);
 
 function proximaImg() {
   if (cont === 1 && direction === -1) {
