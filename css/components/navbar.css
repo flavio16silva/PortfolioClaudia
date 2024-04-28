@@ -5,10 +5,23 @@
   width: 100%;
   height: auto;
   z-index: 10;
-  background:transparent;
-  /*backdrop-filter: blur(5px); transparencia da navbar*/
+  /* background:transparent; */
+  /* backdrop-filter: blur(5px); transparencia da navbar */
   background-color: transparent;
+  /* backdrop-filter: blur(5px); */
+  transition: .5s;
   
+}
+
+.navbar.rolagem {
+  background-color: var(--white);
+  padding-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar.rolagem .barra, .navbar.rolagem .icone {
+  /* color: var(--white); */
+  backdrop-filter: blur(5px);
 }
 
 .navbar .navbar__content {
