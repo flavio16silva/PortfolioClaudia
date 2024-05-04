@@ -101,6 +101,18 @@ p:not(:last-of-type),
   margin-bottom: 6rem;
 }
 
+/* Classes visiveis e invisiveis - efeito ScrollReveal */
+.efeito_titulo,
+.efeito-quadro1,
+.efeito-quadro2,
+.efeito-quadro3,
+.efeito-quadro4,
+.efeito-direita,
+.efeito-esquerda
+ {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 60%;
