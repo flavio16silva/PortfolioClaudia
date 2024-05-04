@@ -65,7 +65,7 @@ footer {
 }
 
 /* Span - Converse comigo! */
-#div-fixa a .flex-itens span{
+#div-fixa a .flex-itens .w_converse{
   display: block;
   margin-top: 6px;
   font-family: var(--font-family);
@@ -79,7 +79,7 @@ footer {
 }
 
 /* Span - aparecer e desaparecer com função no JS */
-#div-fixa a .flex-itens span.aparecer{
+#div-fixa a .flex-itens .w_converse.aparecer{
   transition: 0.5s all;
   opacity: 1;
 }
