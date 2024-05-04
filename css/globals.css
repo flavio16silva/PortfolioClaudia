@@ -108,7 +108,8 @@ p:not(:last-of-type),
 .efeito-quadro3,
 .efeito-quadro4,
 .efeito-direita,
-.efeito-esquerda
+.efeito-esquerda,
+.efeito-consultoria-nome
  {
   visibility: hidden;
 }
