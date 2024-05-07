@@ -24,7 +24,7 @@
 
 // JS para sincronizar o movimento das ondas
 const ondas = document.querySelectorAll('.onda');
-const tempoTotal = 10; // Tempo total da animação em segundos
+const tempoTotal = 15; // Tempo total da animação em segundos
 
 ondas.forEach((onda, index) => {
   onda.style.animationDelay = `${index * (tempoTotal / ondas.length)}s`; // Ajusta o atraso com base no índice e no tempo total
