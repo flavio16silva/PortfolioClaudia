@@ -220,6 +220,10 @@ footer .footer__content .conversar {
   text-transform: none;
 }
 
+.rodape .box-container .caixa .email_rodape {
+  letter-spacing: 1px;
+}
+
 /* Icones de Informações para Contato */
 .rodape .box-container .caixa p i {
   line-height: 0.5rem;
