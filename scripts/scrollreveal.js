@@ -11,9 +11,9 @@ revelar.reveal('.efeito-esquerda',
 
 revelar.reveal('.efeito-direita',
 { 
-  duration: 1500,
+  duration: 2000,
   distance:'100px',
-  delay: 1000,
+  delay: 1200,
   origin: 'right'
 })
 
