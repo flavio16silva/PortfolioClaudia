@@ -37,6 +37,8 @@
       id="favicon" rel="shortcut icon" href="./assets/favicon_claudia.png" />
   </head>
   <body>
+
+
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="navbar__content max-width">
@@ -390,6 +392,17 @@
 
     <!-- HEADER -->
     <header id="header" class="max-width">
+
+       <!-- LIBRAS -->
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+     
+    
+      
       <div class="header__left">
         <h1 class="efeito-esquerda" >Olá! Sou Claudia Palma Psicóloga</h1>
         <!-- <p>Eu sou <span data-js="typing" class="typing"></span></p> -->
@@ -570,7 +583,7 @@
         </div>
         
               <div class="row">
-                <div class="quadros efeito-quadro1">
+                <div class="quadros efeito-esquerda">
                   <div class="icon-box" data-aos="fade-up">
                     <div class="icon"><i class="fa-solid fa-comment-medical"></i></div>
                     <h4 class="title"><a class="titulos" href="">Relação Terapêutica</a></h4>
@@ -578,7 +591,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro2">
+                <div class="quadros efeito-esquerda">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon"><i class="fa-solid fa-handshake"></i></div>
                     <h4 class="title"><a class="titulos" href="">Colaboração e Parceria</a></h4>
@@ -586,7 +599,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro3">
+                <div class="quadros efeito-direita">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon"><i class="fa-solid fa-rotate"></i></div>
                     <h4 class="title"><a class="titulos" href="">Autoconhecimento</a></h4>
@@ -594,7 +607,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro4">
+                <div class="quadros efeito-direita">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="fa-solid fa-arrow-trend-up"></i></i></div>
                     <h4 class="title"><a class="titulos" href="">Novas Habilidades</a></h4>
@@ -602,7 +615,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro1">
+                <div class="quadros efeito-esquerda">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                     <h4 class="title"><a class="titulos" href="">Exploração do Passado</a></h4>
@@ -610,7 +623,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro2">
+                <div class="quadros efeito-esquerda">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="fa-solid fa-check"></i></div>
                     <h4 class="title"><a class="titulos" href="">Foco no presente</a></h4>
@@ -618,7 +631,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro3">
+                <div class="quadros efeito-direita">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="fa-solid fa-key"></i></div>
                     <h4 class="title"><a class="titulos" href="">Promoção da Autonomia</a></h4>
@@ -626,7 +639,7 @@
                   </div>
                 </div>
 
-                <div class="quadros efeito-quadro4">
+                <div class="quadros efeito-direita">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="fa-regular fa-thumbs-up"></i></div>
                     <h4 class="title"><a class="titulos" href="">Aceitação e Validação</a></h4>
@@ -1236,6 +1249,12 @@
     <script src="scripts/contagem.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/onda.js"></script>
+
+    <!-- Script de Libras -->
+    <script src="scripts/libras.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     
     
   </body>
