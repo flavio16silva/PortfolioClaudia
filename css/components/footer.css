@@ -11,7 +11,7 @@ footer {
 .footer__content .ondas-box {
   position: absolute;
   width: 100%;
-  height: 168px;
+  height: 167px;
   overflow: hidden;
   bottom: 0;
   margin-bottom: 500px;
@@ -47,7 +47,7 @@ footer {
 #onda2 {
   animation-name: ondaMover;
   animation-delay: 1s; 
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 #onda3 {
@@ -60,6 +60,12 @@ footer {
   animation-name: ondaMover;
   animation-delay: 3s; 
   opacity: 0.8;
+}
+
+#onda5 {
+  animation-name: ondaMover;
+  animation-delay: 3s; 
+  opacity: 1;
 }
 
 
