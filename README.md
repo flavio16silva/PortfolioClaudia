@@ -1,1 +1,4 @@
-- Lan Page criada para psicologa com uso de HTLM, CSS e JS.
+- Lan Page criada para psicologa com uso de HTLM, CSS e JS;
+- Primeiro projeto totalmente voltado a um pedido de cliente;
+- Aplicação de APIs;
+- Aprimoramento de conteútdo em JS
